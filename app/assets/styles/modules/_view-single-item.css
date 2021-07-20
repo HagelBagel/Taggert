@@ -1,3 +1,4 @@
 .view-single-item {
-    background-color: $mainBlue;
+    background-color: #ccc;
+    color: rgb(224, 77, 77);
 }
