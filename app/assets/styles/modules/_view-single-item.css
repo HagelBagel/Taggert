@@ -1,14 +1,22 @@
 .view-single-item {
     padding-top: 1em;
-    color: rgb(224, 77, 77);
+    color: black;
     
     &__item{
         display: block;
-        background-color: #ccc;
+        background-color: #fff;
         padding: 1em;
         margin-top: 1em;
         width: 100%;
-    }    
+    }
+    
+    &__item__image {
+        border: 1px solid black;
+    }
+
+    &__item__descr {
+        padding-top: 0;
+    }
 
     @mixin atMedium {
         display: flex;    
@@ -16,6 +24,10 @@
 
         &__item + &__item {
             margin-left: 1em;
+        }
+
+        &__item__image {
+            padding: 0;
         }
     }
 }
