@@ -1,4 +1,21 @@
 .view-single-item {
-    background-color: #ccc;
+    padding-top: 1em;
     color: rgb(224, 77, 77);
+    
+    &__item{
+        display: block;
+        background-color: #ccc;
+        padding: 1em;
+        margin-top: 1em;
+        width: 100%;
+    }    
+
+    @mixin atMedium {
+        display: flex;    
+        flex-direction: row;
+
+        &__item + &__item {
+            margin-left: 1em;
+        }
+    }
 }

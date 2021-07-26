@@ -48,10 +48,25 @@
   <!-- A page section -->
   <div id="" class="page-section">
     <div class="wrapper">     
-      <div class="view-single-item">
-        <h1>Single Item View</h1>
-        <p>Content inside single item viewssss</p>
-      </div> 
+      <div class="view-single-item" id="item-image">
+        <div class="view-single-item__item">
+          <img src="./assets/images/small/rome_600.jpg" alt="">
+        </div>
+
+        <div class="view-single-item__item" id="item-descr">
+          <h1>Item description</h1>
+          <p>This is the item description - Stare out the window chase red laser dot cat meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog. Meowing chowing and wowing love fish drink from the toilet and instantly break out into full speed gallop across the house for no reason sit on human so chase mice sniff all the things. </p>
+        </div> 
+
+        <div class="view-single-item__item" id="item-tags">
+          <label for="tag-input">Add new tags, comma-separated:</label>
+          <div class="submit-box">
+            <input type="text" class="tag-input" id="tag-input" name="tag-input" minlength="1" >
+            <button type="button" class="btn">Add tags</button>
+          </div>
+          
+        </div> 
+      </div>      
     </div>    
   </div>
 
