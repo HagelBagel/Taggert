@@ -1,0 +1,19 @@
+.form {
+    display: inline-block;
+
+    &__submit-box {
+        margin-top: .7em;        
+    }
+
+    &__tag-input {
+        border: 1px solid black;
+        padding: .75rem 1.2rem;
+        display: inline-block;
+        margin-bottom: 1em;
+        -webkit-appearance: none;
+
+        @mixin atSmall {
+            font-size: 1.25rem;
+        }
+    }
+}
