@@ -4,31 +4,36 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;    
-    row-gap: .5em;
-    column-gap: .5em;
+    row-gap: .7em;
+    column-gap: .7em;
 
     &__item {
-        padding-top: .5em;
-        padding-bottom: .5em;
-        border: 2px solid black;
+        display: block;
+        background-color: #ddd;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        border: 2px solid transparent;
         border-radius: 5px; 
     }
 
-    &__item__text {
+      &__item__text {
         padding-left:  .7em;
         padding-right: .7em;
     }
 
     &__item__close {
-        background-color: black;
-        color: white;
+        background-color: #ddd;
+        color: black;
         position: relative;
         padding:  .0em .2em;
         margin-right: .2em;
         border-radius: 30%;
     }
 
-    @mixin atMedium {
-        margin-top: 1em;
+    @mixin atMedium {                
+        &__item__close:hover {
+            background-color: black;
+            color: #ddd;
+        }
     }
 }
