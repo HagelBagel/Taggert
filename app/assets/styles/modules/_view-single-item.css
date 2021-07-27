@@ -1,6 +1,5 @@
 .view-single-item {
-    padding-top: 1em;
-    color: black;
+    
     
     &__item{
         display: block;
