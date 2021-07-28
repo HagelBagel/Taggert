@@ -8,6 +8,8 @@ import TagAdder from './modules/TagAdder';
 new StickyHeader();
 new MobileMenu();
 new TagAdder();
+
+
 let modal;
 
 document.querySelectorAll(".open-modal").forEach(el => {

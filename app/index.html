@@ -62,36 +62,12 @@
           <h1>Tags</h1>
           <div class="form">
             <label for="form__tag-input">Add new tags, comma-separated:</label>
-            <div class="form__submit-box">
-              <input type="text" class="form__tag-input" id="tag-input" name="tag-input" minlength="1" maxlength="100" >
-              <button type="button" class="btn btn--submit-box" id="add-tag">Add tags</button>
-            </div>            
-            <div class="tag-list">
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">Tag 1</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">Longer tag</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">A longer tag even yet</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">Tag 1</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">Longer tag</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              <span class="tag-list__item"> 
-                <span class="tag-list__item__text">A longer tag</span>
-                <span class="tag-list__item__close">x</span>
-              </span>
-              
+            <form action="" class="form__submit-box" id="submitbox">
+              <input type="text" class="form__tag-input" id="tag-input" name="taginput" minlength="1" maxlength="100" >
+              <button class="btn btn--submit-box" id="add-tag">Add tags</button>
+            </form>            
+            <div class="tag-list" id="tag-list">
+              <!-- Tags are generated and rendered here -->              
             </div>
           </div>        
         </div> 

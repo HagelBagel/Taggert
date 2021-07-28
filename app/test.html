@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="form__tag-input">Add new tags, comma-separated:</label>
+    <form class="form__submit-box" id="submit-box">
+        <input type="text" class="form__tag-input" id="tag-input" name="tag-input" minlength="1" maxlength="100" >
+        <button class="btn btn--submit-box" id="add-tag">Add tags</button>
+    </form>            
+    <div class="tag-list" id="tag-list">
+        <!-- Tags are generated and rendered here -->              
+    </div>
+    <script>
+      
+        let tagInput = document.getElementById("tag-input").value;
+        let addTag = document.getElementById("add-tag");
+        events();
+    
+
+    function events() {
+        addTag.addEventListener("click", e => {
+            e.preventDefault();
+            addTheTag()
+        });
+    }
+
+    function addTheTag() {               
+        console.log(tagInput);  
+        document.getElementById("tag-list").innerHTML = `
+            <span class="tag-list__item"> 
+                <span class="tag-list__item__text">${tagInput}</span>
+                <span class="tag-list__item__close">x</span>
+            </span>`;  
+        document.getElementById("submit-box").reset();     
+    }
+    </script>
+  </body>
+</html>
