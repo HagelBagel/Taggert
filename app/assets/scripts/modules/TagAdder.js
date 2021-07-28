@@ -1,12 +1,12 @@
 class TagAdder {
-    constructor() {
-        this.tagInput = document.getElementById("tag-input").value;
+    constructor() {        
         this.addTag = document.getElementById("add-tag");
         this.events();
     }
 
     events() {
         this.addTag.addEventListener("click", e => {
+            this.tagInput = document.getElementById("tag-input").value;
             this.addTheTag();
             e.preventDefault();
         });
