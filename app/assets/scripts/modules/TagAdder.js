@@ -22,19 +22,19 @@ class TagAdder {
 
     
     addTheTag() {               
-        console.log(this.tagInput);  
+        console.log("Added " + this.tagInput);  
         document.getElementById("tag-list").innerHTML = `
-            <span class="tag-list__item" id="tag-item"> 
+            <span class="tag-list__item" id="${this.tagInput}"> 
                 <span class="tag-list__item__text">${this.tagInput}</span>
                 <span class="tag-list__item__close id="remove-tag">x</span>
             </span>`;  
-        document.getElementById("submit-box").reset();
-        
+        document.getElementById("submit-box").reset();        
     }
 
     removeTheTag() {
-        this.tagItem = document.getElementById("tag-item");        
+        this.tagItem = document.getElementById(this.tagInput);        
         this.tagItem.remove();
+        console.log("Removed tag: " + this.tagInput);
     }
 }
 
