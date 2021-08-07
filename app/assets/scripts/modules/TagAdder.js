@@ -12,17 +12,15 @@ class TagAdder {
         });
 
         document.querySelector(".tag-list").addEventListener("click", e => {
-            if (e.target.tagName.toLowerCase() === 'span') {
-                console.log("Removing the tag");                
-                this.removeTheTag();
+            if (e.target.classList.contains('tag-list__item__close')) {
+                console.log("Removing the tag");
+                e.target.parentNode.remove();                
                 e.preventDefault();
             }            
         });
     }
-
     
-    addTheTag() {               
-        
+    addTheTag() {   
         let tagArray = this.tagInput.split(', ');
         let i;      
         for (i = 0; i < tagArray.length; i++) {
@@ -40,13 +38,7 @@ class TagAdder {
         };
         
         document.getElementById("submit-box").reset();        
-    }
-
-    removeTheTag() {
-        this.tagItem = document.getElementById(this.tagInput);        
-        this.tagItem.remove();
-        console.log("Removed tag: " + this.tagInput);
-    }
+    }    
 }
 
 export default TagAdder;

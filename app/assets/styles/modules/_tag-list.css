@@ -6,6 +6,7 @@
     justify-content: flex-start;    
     row-gap: .7em;
     column-gap: .7em;
+    transition: opacity 1s;
 
     &__item {
         display: block;
@@ -23,7 +24,7 @@
 
     &__item__close {
         background-color: #ddd;
-        color: black;
+        color: #888;
         position: relative;
         padding:  .0em .2em;
         margin-right: .2em;
@@ -32,8 +33,11 @@
 
     @mixin atMedium {                
         &__item__close:hover {
-            background-color: black;
-            color: #ddd;
+            background-color: #bbb;
         }
     }
+}
+
+.removed {
+    opacity: 0;
 }
